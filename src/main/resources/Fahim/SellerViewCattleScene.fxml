@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx"
+            fx:controller="Fahim.SellerViewCattleSceneController"
+            prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #e9ecef; -fx-font-family: 'Segoe UI';">
+
+    <!-- Title Label -->
+    <Label text="Available Cattle Inventory" layoutX="150.0" layoutY="20.0" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #343a40; -fx-background-color: white; -fx-padding: 10; -fx-pref-width: 300;" />
+
+    <!-- TableView for Cattle List -->
+    <TableView fx:id="cattleTable" layoutX="50.0" layoutY="70.0" prefWidth="500.0" prefHeight="200.0" style="-fx-background-color: white; -fx-border-color: #dee2e6; -fx-border-width: 1;">
+        <columns>
+            <TableColumn text="ID" fx:id="idColumn" prefWidth="100" />
+            <TableColumn text="Breed" fx:id="breedColumn" prefWidth="150" />
+            <TableColumn text="Age" fx:id="ageColumn" prefWidth="100" />
+            <TableColumn text="Weight" fx:id="weightColumn" prefWidth="100" />
+            <TableColumn text="Health Status" fx:id="healthStatusColumn" prefWidth="150" />
+        </columns>
+    </TableView>
+
+    <!-- Input Fields -->
+    <TextField fx:id="idField" promptText="ID" layoutX="50.0" layoutY="300.0" prefWidth="100.0" style="-fx-padding: 5;" />
+    <ComboBox fx:id="breedField" layoutX="160.0" layoutY="300.0" prefWidth="150.0" promptText="Breed" style="-fx-padding: 5;" />
+    <TextField fx:id="ageField" promptText="Age" layoutX="320.0" layoutY="300.0" prefWidth="50.0" style="-fx-padding: 5;" />
+    <TextField fx:id="weightField" promptText="Weight" layoutX="380.0" layoutY="300.0" prefWidth="70.0" style="-fx-padding: 5;" />
+    <ComboBox fx:id="healthStatusField" layoutX="460.0" layoutY="300.0" prefWidth="90.0" promptText="Health Status" style="-fx-padding: 5;" />
+
+    <!-- Buttons -->
+    <Button text="Add Cattle" fx:id="addCattleButton" layoutX="250.0" layoutY="350.0" style="-fx-background-color: #495057; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 10; -fx-background-radius: 10;" />
+    <Button text="Remove Cattle" fx:id="removeCattleButton" layoutX="350.0" layoutY="350.0" style="-fx-background-color: #d9534f; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 10; -fx-background-radius: 10;" />
+
+    <!-- Footer Label -->
+    <Label text="© 2024 Kurbani Cattle Hut - All Rights Reserved" layoutX="150.0" layoutY="450.0" prefWidth="300.0" alignment="CENTER" style="-fx-background-color: #343a40; -fx-text-fill: white; -fx-font-size: 12px; -fx-padding: 5;" />
+
+</AnchorPane>

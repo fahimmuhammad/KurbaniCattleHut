@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="veterinarianDashboardBorderPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #e9ecef; -fx-font-family: 'Segoe UI';" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Fahim.VeterinarianDashboardViewController">
+    <!-- VBox on the Left -->
+    <left>
+        <VBox alignment="CENTER" prefWidth="200.0" spacing="15.0" style="-fx-background-color: #343a40; -fx-padding: 20;">
+            <children>
+                <Button onAction="#veterinarianDashboardLoginButton" style="-fx-background-color: #495057; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 10; -fx-background-radius: 10; -fx-min-width: 150px; -fx-min-height: 40px;" text="Login" />
+                <Button onAction="#veterinarianDashboardScheduleCheckupsButton" style="-fx-background-color: #495057; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 10; -fx-background-radius: 10; -fx-min-width: 150px; -fx-min-height: 40px;" text="Schedule Checkups" />
+                <Button onAction="#veterinarianDashboardHealthAssessmentButton" style="-fx-background-color: #495057; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 10; -fx-background-radius: 10; -fx-min-width: 150px; -fx-min-height: 40px;" text="Health Assessment" />
+                <Button onAction="#veterinarianDashboardFlagCattleButton" style="-fx-background-color: #495057; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 10; -fx-background-radius: 10; -fx-min-width: 150px; -fx-min-height: 40px;" text="Flag Cattle" />
+                <Button onAction="#veterinarianDashboardHealthReportsButton" style="-fx-background-color: #495057; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 10; -fx-background-radius: 10; -fx-min-width: 150px; -fx-min-height: 40px;" text="Health Reports" />
+                <Button onAction="#veterinarianDashboardScheduleVaccinationButton" style="-fx-background-color: #495057; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 10; -fx-background-radius: 10; -fx-min-width: 150px; -fx-min-height: 40px;" text="Schedule Vaccination" />
+                <Button onAction="#veterinarianDashboardHealthImprovementsButton" style="-fx-background-color: #495057; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 10; -fx-background-radius: 10; -fx-min-width: 150px; -fx-min-height: 40px;" text="Health Improvements" />
+                <Button onAction="#veterinarianDashboardRecordTreatmentsButton" style="-fx-background-color: #495057; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 10; -fx-background-radius: 10; -fx-min-width: 150px; -fx-min-height: 40px;" text="Record Treatments" />
+                <Button onAction="#logOutButton" style="-fx-background-color: #d9534f; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 10; -fx-background-radius: 10; -fx-min-width: 150px; -fx-min-height: 40px;" text="Logout" />
+            </children>
+        </VBox>
+    </left>
+
+    <!-- AnchorPane in the Center -->
+    <center>
+        <AnchorPane style="-fx-background-color: white; -fx-border-color: #dee2e6; -fx-border-width: 1; -fx-border-radius: 5;">
+            <children>
+                <Label alignment="CENTER" layoutX="220.0" layoutY="200.0" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #343a40;" text="Welcome to Veterinarian Dashboard" />
+            </children>
+        </AnchorPane>
+    </center>
+
+    <!-- Label in the Bottom -->
+    <bottom>
+        <Label alignment="CENTER" prefHeight="30.0" prefWidth="801.0" style="-fx-background-color: #343a40; -fx-text-fill: white; -fx-font-size: 12px; -fx-padding: 5;" text="© 2024 Kurbani Cattle Hut - All Rights Reserved" />
+    </bottom>
+</BorderPane>
