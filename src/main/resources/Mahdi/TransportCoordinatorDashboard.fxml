@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="transportCoordinatorDashboardBorderPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #e9ecef; -fx-font-family: 'Segoe UI';" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Mahdi.TransportCoordinatorDashboardController">
+    <left>
+        <VBox alignment="CENTER" prefWidth="200.0" spacing="15.0" style="-fx-background-color: #343a40; -fx-padding: 20;">
+            <children>
+                <Button onAction="#transportRequestOnAction" style="-fx-background-color: #495057; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 10; -fx-background-radius: 10; -fx-min-width: 150px; -fx-min-height: 40px;" text="Transport Request" />
+                <Button onAction="#vehicleAssignmentOnAction" style="-fx-background-color: #495057; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 10; -fx-background-radius: 10; -fx-min-width: 150px; -fx-min-height: 40px;" text="Vehicle Assignment" />
+                <Button onAction="#tasksOnAction" style="-fx-background-color: #495057; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 10; -fx-background-radius: 10; -fx-min-width: 150px; -fx-min-height: 40px;" text="Tasks" />
+                <Button onAction="#taskSchedulingOnAction" style="-fx-background-color: #495057; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 10; -fx-background-radius: 10; -fx-min-width: 150px; -fx-min-height: 40px;" text="Task Scheduling" />
+                <Button onAction="#transportMonitoringOnAction" style="-fx-background-color: #495057; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 10; -fx-background-radius: 10; -fx-min-width: 150px; -fx-min-height: 40px;" text="Transport Monitoring" />
+                <Button onAction="#issueManagementOnAction" style="-fx-background-color: #495057; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 10; -fx-background-radius: 10; -fx-min-width: 150px; -fx-min-height: 40px;" text="Issue Management" />
+                <Button onAction="#deliveryConfirmationOnAction" style="-fx-background-color: #495057; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 10; -fx-background-radius: 10; -fx-min-width: 150px; -fx-min-height: 40px;" text="Delivery Confirmation" />
+                <Button onAction="#performanceAnalysisOnAction" style="-fx-background-color: #495057; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 10; -fx-background-radius: 10; -fx-min-width: 150px; -fx-min-height: 40px;" text="Performance Analysis" />
+                <Button style="-fx-background-color: #d9534f; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 10; -fx-background-radius: 10; -fx-min-width: 150px; -fx-min-height: 40px;" text="Logout" />
+            </children>
+        </VBox>
+    </left>
+    <bottom>
+        <Label fx:id="errorLabel" style="-fx-background-color: #d4d4d4;" text="Label" BorderPane.alignment="CENTER" />
+    </bottom>
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" layoutX="285.0" layoutY="230.0" prefHeight="128.0" prefWidth="143.0" style="-fx-background-color: red;" text="Default" textAlignment="CENTER">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Label>
+            </children></AnchorPane>
+    </center>
+</BorderPane>

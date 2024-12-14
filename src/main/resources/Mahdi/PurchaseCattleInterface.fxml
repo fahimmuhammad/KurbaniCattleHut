@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Mahdi.PurchaseCattleInterfaceController">
+
+   <!-- Top Section: Title -->
+   <top>
+      <Label text="Purchase Cattle" style="-fx-font-size: 20px; -fx-padding: 10; -fx-alignment: center;"/>
+   </top>
+
+   <!-- Center Section: List of Available Cattle -->
+   <center>
+      <TableView fx:id="cattleTable" style="-fx-padding: 10;">
+         <columns>
+            <TableColumn text="ID" fx:id="columnId"/>
+            <TableColumn text="Breed" fx:id="columnBreed"/>
+            <TableColumn text="Age" fx:id="columnAge"/>
+            <TableColumn text="Weight" fx:id="columnWeight"/>
+            <TableColumn text="Health Status" fx:id="columnHealthStatus"/>
+            <TableColumn text="Price" fx:id="colPrice" prefWidth="120" />
+         </columns>
+      </TableView>
+   </center>
+
+   <!-- Bottom Section: Actions -->
+   <bottom>
+      <HBox alignment="CENTER" spacing="10" style="-fx-padding: 10;">
+         <Button text="Add to Cart" fx:id="addToCartButton"/>
+      </HBox>
+   </bottom>
+
+</BorderPane>
